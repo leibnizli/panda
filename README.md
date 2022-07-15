@@ -2,6 +2,8 @@ English | [简体中文](./README-zh-CN.md)
 
 # <img src="https://cloud.githubusercontent.com/assets/1193966/15237922/3edf64c2-1905-11e6-9503-b5cd0765313f.png">
 
+> panda is a font processing tool, which is a visual package based on <a href="https://github.com/purplebamboo/font-carrier">font-carrier</a>.
+
 ## Install
 
 * <del>macOS X32</del> v1.1
