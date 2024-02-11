@@ -5,8 +5,8 @@ English | [简体中文](./README-zh-CN.md)
 ## Install
 
 * <del>macOS X32</del> v1.1
-* <a href="https://drive.google.com/file/d/1hcyQ87oEwvepvy2hk6EExKhbSOYDO5-m/view?usp=sharing">macOS X64</a> v1.1 (for macOS Catalina+)
-* <a href="https://drive.google.com/file/d/1b6GG30jnqAlsBWQ2-n98dGoxXCg3bWK6/view?usp=sharing">Windows</a> v1.1
+* <a href="https://github.com/leibnizli/panda/releases">macOS X64</a> v1.1 (for macOS Catalina+)
+* <a href="https://github.com/leibnizli/panda/releases">Windows</a> v1.1
 * <a href="https://itunes.apple.com/app/id1181350496">App Store</a> Paid version
 
 
