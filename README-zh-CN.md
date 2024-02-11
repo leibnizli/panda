@@ -4,7 +4,7 @@
 
 > 小熊猫是一款字体处理工具，是基于<a href="https://github.com/purplebamboo/font-carrier">font-carrier</a>的可视化封装
 
-![panda](https://github.com/leibnizli/panda/assets/1193966/5abe092c-8cb1-4dc7-af4d-14beff7a9676)
+<img alt="panda" width="280" src="https://github.com/leibnizli/panda/assets/1193966/5abe092c-8cb1-4dc7-af4d-14beff7a9676">
 
 ## 安装
 
