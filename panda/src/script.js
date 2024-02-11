@@ -17,6 +17,7 @@ $(document).on({
         e.preventDefault();
     }
 });
+
 // Create an empty menubar
 var menu = new nw.Menu({type: 'menubar'});
 menu.createMacBuiltin("Panda");
@@ -40,13 +41,11 @@ buy.click = function () {
   require('nw.gui').Shell.openExternal( "https://buy.arayofsunshine.dev/" );
 }
 submenu.append(buy);
-
 // Create and append the 1st level menu to the menubar
 menu.append(new nw.MenuItem({
   label: 'Help',
   submenu: submenu
 }));
-
 // Assign it to `window.menu` to get the menu displayed
 nw.Window.get().menu = menu;
 //app
