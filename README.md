@@ -1,6 +1,10 @@
 English | [简体中文](./README-zh-CN.md)
 
-# <img src="https://cloud.githubusercontent.com/assets/1193966/15237922/3edf64c2-1905-11e6-9503-b5cd0765313f.png">
+# Panda
+
+> Red Panda is a font processing tool, which is a visual package based on <a href="https://github.com/purplebamboo/font-carrier">font-carrier</a>
+
+![panda](https://github.com/leibnizli/panda/assets/1193966/5abe092c-8cb1-4dc7-af4d-14beff7a9676)
 
 ## Install
 
@@ -12,24 +16,18 @@ English | [简体中文](./README-zh-CN.md)
 
 ## Features
 
+1. Merge, you can batch assemble svg files into font files
+2. Modify, you can add, delete, replace, and export glyphs to the font, for example: replace the specified glyph in the font
+3. Crop and filter out the required glyphs from the Chinese fonts (filtering 8.1M Chinese fonts, it takes about 6 seconds to wait)
 
-1.Merge, svg files can be combined into font files in batches.
 
-<img src="https://cloud.githubusercontent.com/assets/1193966/15237919/3edb25c4-1905-11e6-9a9a-be8851951840.png" alt="1" style="max-width:100%;">
+## Similar product
 
-2.Modify, add, delete, replace, export glyphs
+I developed them all🤣
 
-For example: export the specified icon from the specified font file
+* <a href="https://arayofsunshine.dev/fontmagic">FontMagic</a>
+* <a href="https://github.com/leibnizli/WebFont">WebFont</a>
 
-<img src="https://cloud.githubusercontent.com/assets/1193966/15237920/3edb94a0-1905-11e6-992e-84fa3a7b91c4.gif" alt="2" style="max-width:100%;">
-
-For example: replace a specified glyph in a font
-
-<img src="https://cloud.githubusercontent.com/assets/1193966/15237923/3edf94ec-1905-11e6-91ac-e600ee16a771.gif" alt="3" style="max-width:100%;">
-
-3. Cut out the required glyphs from the Chinese fonts (to filter 8.1M Chinese fonts, the waiting time is about 6s)
-
-<img src="https://cloud.githubusercontent.com/assets/1193966/15237921/3edf1ff8-1905-11e6-9734-b6b060e3a9ae.png" alt="4" style="max-width:100%;">
 
 
 

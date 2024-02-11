@@ -36,16 +36,16 @@ a { color: #3B5998; text-decoration: none; }
 .icon-daochu:before { content: "\e600"; }
 .icon-tihuanicon:before { content: "\e604"; }
 /*---*/
-.app { width:280px; margin:0 auto; overflow:hidden; background:#fff; }
+.app {height:100vh; display:flex; flex-direction:column; overflow:hidden; background:#fff; }
 /*header*/
 .app-hd { height:100px; background:linear-gradient(#3d93dd,#288add); /*background:#1F170E;*/ -webkit-app-region: drag; }
 .ui-btn { width:100%; padding:6px 0; text-align:center; border-radius:2px; font-size:12px; background:#11cd6e; border:0; color:#fff; }
 .ui-btn:active { background:#0fa459; }
 .ui-btn.disable { background:#bbb; }
 /*bd*/
-.app-bd { height:366px; padding:10px 10px 0; }
-    .ui-font {}
-        .ui-font-area { display:table; box-sizing:border-box; width:100%; min-height:356px; border:dashed 1px #d7dfee; border-radius:6px; background:rgba(222,230,246,0.2); text-align:center; color:#999; cursor:default; }
+.app-bd { flex:1; overflow:hidden; padding:10px; box-sizing:border-box; }
+    .ui-font { height:100%; }
+        .ui-font-area { display:table; height:100%; box-sizing:border-box; width:100%; min-height:356px; border:dashed 1px #d7dfee; border-radius:6px; background:rgba(222,230,246,0.2); text-align:center; color:#999; cursor:default; }
         .ui-font-area.active { background:rgba(222,230,246,0.5) }
             .ui-font-area-txt { display:table-cell; vertical-align:middle; }
             .ui-font-area-txt:before { display:block; text-align:center; font-size:64px; line-height:1.1; font-family:"iconfont"; }
@@ -74,7 +74,7 @@ a { color: #3B5998; text-decoration: none; }
                     .ui-font-replace-input { position:absolute; left:0; top:0; width:30px; height:45px; opacity:0; cursor:pointer; }
             .ui-font-item:hover .ui-font-operation { display:block; }
 /*ft*/
-.app-ft { text-align:center; }
+.app-ft { height:52px; text-align:center; }
     .app-nav { background:#f8f8f8; border-top:solid 1px #d8d8d8; }
     .app-nav-list { overflow:hidden; display:-webkit-box; display:box; }
         .app-nav-item { position:relative; z-index:1; width:50%; float:left; padding:5px 0 5px; line-height:1; font-size:12px; text-align:center; cursor:default; -webkit-box-flex:1.0; box-flex:1.0; color:#929292; }
@@ -83,4 +83,4 @@ a { color: #3B5998; text-decoration: none; }
 /*bar*/
 ::-webkit-scrollbar-track-piece { background-color:#eee; }
 ::-webkit-scrollbar { width:6px; }
-::-webkit-scrollbar-thumb { background:#999; border-radius:3px; } 
+::-webkit-scrollbar-thumb { background:#999; border-radius:3px; }

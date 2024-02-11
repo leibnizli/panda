@@ -10,16 +10,21 @@
         "docs": "https://github.com/leibnizli/panda/wiki",
         "faq": "https://github.com/leibnizli/panda/wiki/FAQ"
     },
-    "description": "A simple font processing tools",
+  "scripts": {
+    "dev": "/Applications/nwjs.app/Contents/MacOS/nwjs ."
+  },
+  "description": "A simple font processing tools",
     "main": "index.html",
     "window": {
-        "title": "小熊猫 v1.2",
-        "toolbar": false,
+        "title": "Panda v1.2.0",
+        "toolbar": true,
         "icon": "icon.png",
-        "width": 280,
-        "height": 428,
+        "width": 345,
+        "height": 528,
+        "min_width": 280,
+        "min_height": 428,
         "position": "center",
-        "resizable": false,
+        "resizable": true,
         "frame": true
     },
     "chromium-args": "--enable-threaded-compositing",

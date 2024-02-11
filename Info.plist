@@ -1,0 +1,8 @@
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>dev.arayofsunshine.panda</string>
+    <key>CFBundleName</key>
+    <string>Panda</string>
+</dict>
+</plist>

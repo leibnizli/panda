@@ -1,5 +1,7 @@
 var fontCarrier = require('font-carrier');
 var fs = require("fs");
+// var fontCarrier = {};
+// var fs = {};
 //drag
 $(document).on({
     dragleave: function(e) {
@@ -15,6 +17,38 @@ $(document).on({
         e.preventDefault();
     }
 });
+// Create an empty menubar
+var menu = new nw.Menu({type: 'menubar'});
+menu.createMacBuiltin("Panda");
+// Create a submenu as the 2nd level menu
+var submenu = new nw.Menu();
+const issue = new nw.MenuItem({ label: 'Report An Issue..' });
+issue.click = function () {
+  require('nw.gui').Shell.openExternal( "https://github.com/leibnizli/panda/issues" );
+}
+
+submenu.append(issue);
+
+const website = new nw.MenuItem({ label: 'Website' })
+website.click = function () {
+  require('nw.gui').Shell.openExternal( "https://arayofsunshine.dev/" );
+}
+submenu.append(website);
+
+const buy = new nw.MenuItem({ label: 'Buy Me A Coffee' })
+buy.click = function () {
+  require('nw.gui').Shell.openExternal( "https://buy.arayofsunshine.dev/" );
+}
+submenu.append(buy);
+
+// Create and append the 1st level menu to the menubar
+menu.append(new nw.MenuItem({
+  label: 'Help',
+  submenu: submenu
+}));
+
+// Assign it to `window.menu` to get the menu displayed
+nw.Window.get().menu = menu;
 //app
 var defaults = {
     index: 0
@@ -63,7 +97,7 @@ App.prototype = {
                         });
                         var file = files[i];
                         fontList.prepend('<li class="ui-font-item">\
-                            <div class="ui-font-operation"><span class="ui-font-del" title="删除当前图标">&#xe607;</span></div>\
+                            <div class="ui-font-operation"><span class="ui-font-del" title="Delete the current icon">&#xe607;</span></div>\
                             <div class="ui-font-pic"><img width="45" height="45" src="file://' + file.path + '" alt=""></div>\
                             <div class="ui-font-info">\
                                 <div class="ui-font-name"><span class="ui-font-name-file">' + file.name + '</span><span class="ui-font-name-unicode">&amp;#x' + unicodeNum + ';</span></div>\
@@ -81,7 +115,7 @@ App.prototype = {
                     self.isFirst = false;
                     //var importPath = file.path.replace(/[^/\\]+$/, "");
                     file.path.replace(/[^/\\]+$/, function(a) {
-                        fontArea.find(".ui-font-area-txt").html('解析文件：' + a + '<br>将一个或多个svg文件拖放至此开始修改');
+                        fontArea.find(".ui-font-area-txt").html('Current file：' + a + '<br>Drag one or more SVG files to start to modify');
                     });
                     var glyphs = fontCarrier.transfer(file.path).allGlyph();
                     for (key in glyphs) {
@@ -95,7 +129,7 @@ App.prototype = {
                             continue;
                         }
                         fontList.prepend('<li class="ui-font-item">\
-                            <div class="ui-font-operation"><span class="ui-font-replace" title="替换">&#xe604;<input class="ui-font-replace-input" type="file" accept=".svg"/></span><span class="ui-font-export" title="导出当前图标为svg格式">&#xe600;</span><span class="ui-font-del" title="删除当前图标">&#xe607;</span></div>\
+                            <div class="ui-font-operation"><span class="ui-font-replace" title="Replace">&#xe604;<input class="ui-font-replace-input" type="file" accept=".svg"/></span><span class="ui-font-export" title="Export the current icon is SVG format">&#xe600;</span><span class="ui-font-del" title="Delete the current icon">&#xe607;</span></div>\
                             <div class="ui-font-pic"><img width="45" height="45" src="data:image/svg+xml;base64,' + new Buffer(svg).toString('base64') + '" alt=""></div>\
                             <div class="ui-font-info">\
                                 <div class="ui-font-name"><span class="ui-font-name-unicode">&amp;' + key.slice(1) + '</span></div>\
@@ -127,7 +161,7 @@ App.prototype = {
                         });
                         var file = files[i];
                         fontList.prepend('<li class="ui-font-item">\
-                            <div class="ui-font-operation"><span class="ui-font-del" title="删除当前图标">&#xe607;</span></div>\
+                            <div class="ui-font-operation"><span class="ui-font-del" title="Delete the current icon">&#xe607;</span></div>\
                             <div class="ui-font-pic"><img width="45" height="45" src="file://' + file.path + '" alt=""></div>\
                             <div class="ui-font-info">\
                                 <div class="ui-font-name"><span class="ui-font-name-file">' + file.name + '</span><span class="ui-font-name-unicode">&amp;#x' + unicodeNum + ';</span></div>\
@@ -143,7 +177,7 @@ App.prototype = {
                 }
                 self.isFirst = false;
                 file.path.replace(/[^/\\]+$/, function(a) {
-                    fontArea.find(".ui-font-area-txt").html('即将裁剪文件：' + a);
+                    fontArea.find(".ui-font-area-txt").html('Files are about to cut：' + a);
                 });
                 self.data[self.status].push({
                     path: file.path
@@ -176,7 +210,7 @@ App.prototype = {
                 //名字匹配矫正
                 var data = self.data[self.status];
                 if (data.length > 0) {
-                    renderBtn.addClass("disable").html("导出中...");
+                    renderBtn.addClass("disable").html("Export...");
                     var font;
                     //C:\Users\Administrator\Desktop\hebing.svg
                     //C:\Users\Administrator\Desktop\iconfont-lvxing.svg
@@ -219,7 +253,8 @@ App.prototype = {
                 }
                 html += '<li><i class="icon iconfont">' + data[i].unicode + '</i><div class="code">&amp;' + data[i].unicode.slice(1) + '</div></li>'
             }
-            fs.writeFileSync(dir + '/demo.html', '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>IconFont</title><link rel="stylesheet" href="demo.css"></head><body><div class="main"><h1>IconFont 图标</h1><ul class="icon_lists clear">' + html + '</ul><div class="helps">第一步：使用font-face声明字体<pre>\n@font-face {\n    font-family: "iconfont";\n    src: url("iconfont.eot");\n    src: url("iconfont.eot?#iefix") format("embedded-opentype"),\n    url("iconfont.woff") format("woff"),\n    url("iconfont.ttf") format("truetype"),\n    url("iconfont.svg#iconfont") format("svg");\n}</pre>\n第二步：定义使用iconfont的样式<pre>.iconfont {\n    font-family:"iconfont" !important;\n    font-size:16px;\n    font-style:normal;\n    -webkit-font-smoothing: antialiased;\n    -webkit-text-stroke-width: 0.2px;\n    -moz-osx-font-smoothing: grayscale;\n}</pre>第三步：挑选相应图标并获取字体编码，应用于页面<pre>&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;</pre></div></div></body></html>');
+            fs.writeFileSync(dir + '/demo.html', '<!DOCTYPE html><html><head><meta charset="utf-8"/><title>IconFont</title><link rel="stylesheet" href="demo.css"></head><body><div class="main"><h1>IconFont</h1><ul class="icon_lists clear">' + html + '</ul><div class="helps">Step 1: Use font-face to declare fonts<pre>\n@font-face {\n    font-family: "iconfont";\n    src: url("iconfont.eot");\n    src: url("iconfont.eot?#iefix") format("embedded-opentype"),\n    url("iconfont.woff") format("woff"),\n    url("iconfont.ttf") format("truetype"),\n    url("iconfont.svg#iconfont") format("svg");\n}</pre>\nStep 2: Define the style of using iconfont\n' +
+              '<pre>.iconfont {\n    font-family:"iconfont" !important;\n    font-size:16px;\n    font-style:normal;\n    -webkit-font-smoothing: antialiased;\n    -webkit-text-stroke-width: 0.2px;\n    -moz-osx-font-smoothing: grayscale;\n}</pre>Step 3: Select the corresponding icon and get font coding, apply to the page<pre>&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;</pre></div></div></body></html>');
         }
     },
     _getunicode: function() {
@@ -272,27 +307,27 @@ App.prototype = {
                     <ul class="ui-font-list"></ul>\
                     <div class="result"></div>\
                     <div class="ui-font-command">\
-                        <button class="ui-btn ui-font-command-render">生成</button>\
+                        <button class="ui-btn ui-font-command-render">Generate</button>\
                     </div>\
                 </div>';
         var view = {
             merge: '<div class="ui-font">\
                 <div class="ui-font-area">\
-                    <span class="icon-yijieshou ui-font-area-txt">将一个或多个svg文件拖放至此<br/>如文件较大，需耐心等待</span>\
+                    <span class="icon-yijieshou ui-font-area-txt">Drag one or more SVG files to this</span>\
                 </div>' + commonHtml + '</div>',
             add: '<div class="ui-font">\
                 <div class="ui-font-area">\
-                    <span class="icon-yijieshou ui-font-area-txt">将一个待修改字体(.ttf)文件拖放至此<br/>如文件较大，需耐心等待</span>\
+                    <span class="icon-yijieshou ui-font-area-txt">Drag and drop a font (.ttf) file to be modified <br/> If the file is large, you need to wait patiently</span>\
                 </div>' + commonHtml + '</div>',
             cut: '<div class="ui-font">\
                     <div class="ui-font-area">\
-                        <span class="icon-yijieshou ui-font-area-txt">将一个待裁剪字体(.ttf)文件拖放至此<br/>如文件较大，需耐心等待</span>\
+                        <span class="icon-yijieshou ui-font-area-txt">Drag and drop a font (.ttf) file to this <br/> If the file is large, you need to wait patiently</span>\
                     </div>\
                     <div class="ui-font-main" style="display:none">\
-                        <textarea class="ui-font-textarea" placeholder="在此输入需要保留的文字"></textarea>\
+                        <textarea class="ui-font-textarea" placeholder="Enter the text you need to keep here"></textarea>\
                         <div class="result"></div>\
                         <div class="ui-font-command">\
-                            <button class="ui-btn ui-font-command-render">生成</button>\
+                            <button class="ui-btn ui-font-command-render">Generate</button>\
                         </div>\
                     </div>\
                 </div>',
