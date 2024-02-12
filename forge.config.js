@@ -1,11 +1,4 @@
 module.exports = {
-  electronPackagerConfig: {
-    icon: "./build/icon",
-    win32metadata:{
-      ProductName: "Panda",
-      CompanyName: "arayofsunshine.dev"
-    }
-  },
   packagerConfig: {
     // dir: "./app",
     //ignore: [".idea", ".gitignore", "^/src", "^/demo", "^/dist"],

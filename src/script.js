@@ -210,7 +210,7 @@ App.prototype = {
                       });
                       renderBtn.removeClass("disable").html("Generate");
                       isAllowRender = true;
-                      openFolder(directory);
+                      openFolder(newDirectory);
                     } catch (e){
                       alert(e)
                     }
