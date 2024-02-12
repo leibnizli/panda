@@ -9,8 +9,9 @@ English | [简体中文](./README-zh-CN.md)
 
 ## Install
 
-* <a href="https://github.com/leibnizli/panda/releases">macOS X64</a> v1.2.0
-* <a href="https://github.com/leibnizli/panda/releases">Windows</a> v1.2.0
+* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda-1.2.0-arm64.dmg">macOS</a> v1.2.0 (Apple Silicon)
+* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda-1.2.0.dmg">macOS</a> v1.2.0 (Intel)
+* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda-win32-x64-1.2.0.zip">Windows</a> v1.2.0
 
 
 ## Features
