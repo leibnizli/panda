@@ -13,22 +13,7 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin', 'win32'],
-    },
-    {
-      name: '@electron-forge/maker-dmg',
-      config: {
-        icon: './build/icon.icns',
-        format: 'ULFO'
-      }
-    },
-    {
-      name: '@electron-forge/maker-deb',
-      config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
+      platforms: ['win32'],
     },
   ],
   publishers: [
