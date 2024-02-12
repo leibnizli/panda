@@ -27,7 +27,7 @@
 
 都是我开发🤣
 
-* <a href="https://arayofsunshine.dev/fontmagic">FontMagic</a>
+* <a href="https://github.com/leibnizli/FontMagic">FontMagic</a>
 * <a href="https://github.com/leibnizli/WebFont">WebFont</a>
 
 

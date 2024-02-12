@@ -1,0 +1,23 @@
+name: windows
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+
+  publish_on_win:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@master
+        with:
+          node-version: 18.17.1
+      - name: install dependencies
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run publish

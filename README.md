@@ -26,7 +26,7 @@ English | [简体中文](./README-zh-CN.md)
 
 I developed them all🤣
 
-* <a href="https://arayofsunshine.dev/fontmagic">FontMagic</a>
+* <a href="https://github.com/leibnizli/FontMagic">FontMagic</a>
 * <a href="https://github.com/leibnizli/WebFont">WebFont</a>
 
 

@@ -1,9 +1,16 @@
-# dependencies
-/node_modules
-
-*.exe
+node_modules
+.DS_Store
+/dist/
 *.dmg
-/panda/node_modules
-/build
-*.idea
-cache
+.idea
+*lock.json
+electron-packager-darwin-template
+electron-packager-mac
+*.zip
+*.log
+
+out/
+.env
+assets
+src/font/demo
+memo.md
