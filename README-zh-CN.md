@@ -10,8 +10,9 @@
 ## 安装
 
 * <del>macOS X32</del> v1.1
-* <a href="https://pan.baidu.com/s/1uK0NdteMS1To_4MZH4h1RA" rel="nofollow">macOS X64</a> v1.1 (提取码：`d9by`，适用于macOS Catalina+)
-* <a href="http://pan.baidu.com/s/1mhUP2Pi" rel="nofollow">Windows</a> v1.1
+* <a href="https://github.com/leibnizli/panda/releases">macOS X64</a> v1.2.0
+* <a href="https://github.com/leibnizli/panda/releases">Windows</a> v1.2.0
+* <a href="https://itunes.apple.com/app/id1181350496">App Store</a> Paid version
 
 
 ## 功能

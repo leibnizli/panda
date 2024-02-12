@@ -2,7 +2,7 @@ module.exports = {
   packagerConfig: {
     // dir: "./app",
     //ignore: [".idea", ".gitignore", "^/src", "^/demo", "^/dist"],
-    ignore: [".idea", ".gitignore", "^/.env$", "^/src", "^/demo", "^/dist"],
+    ignore: [".idea", ".gitignore", "^/.env$", "^/demo", "^/dist"],
     icon: "./build/icon",
   },
   rebuildConfig: {},
