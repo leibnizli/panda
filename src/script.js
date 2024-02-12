@@ -1,6 +1,7 @@
 const fontCarrier = require('font-carrier');
 const {shell} = require('electron') // deconstructing assignment
 const fs = require("fs");
+const path = require('path');
 // var fontCarrier = {};
 // var fs = {};
 //drag
@@ -188,10 +189,10 @@ App.prototype = {
                       var font;
                       //C:\Users\Administrator\Desktop\hebing.svg
                       //C:\Users\Administrator\Desktop\iconfont-lvxing.svg
-                      var exportPath = data[0].path.replace(/[^/\\]+$/, "");
-                      var dir = exportPath + '/demo';
-                      if (!fs.existsSync(dir)) {
-                        fs.mkdirSync(dir);
+                      const directory = path.dirname(data[0].path);
+                      const newDirectory = path.join(directory, 'demo');
+                      if (!fs.existsSync(newDirectory)) {
+                        fs.mkdirSync(newDirectory);
                       }
                       if (self.status == "cut") {
                         var val = self.bd.find(".ui-font-textarea").val();
@@ -203,13 +204,13 @@ App.prototype = {
                           font.setSvg(data[i].unicode, data[i].glyph);
                         }
                       }
-                      self._renderFile(dir);
+                      self._renderFile(newDirectory);
                       font.output({
-                        path: dir + '/iconfont'
-                      })
+                        path: path.join(directory, 'demo', 'iconfont')
+                      });
                       renderBtn.removeClass("disable").html("Generate");
                       isAllowRender = true;
-                      openFolder(dir);
+                      openFolder(directory);
                     } catch (e){
                       alert(e)
                     }
