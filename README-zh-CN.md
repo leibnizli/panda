@@ -9,7 +9,6 @@
 
 ## 安装
 
-* <del>macOS X32</del> v1.1
 * <a href="https://github.com/leibnizli/panda/releases">macOS X64</a> v1.2.0
 * <a href="https://github.com/leibnizli/panda/releases">Windows</a> v1.2.0
 
