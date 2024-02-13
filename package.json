@@ -30,23 +30,12 @@
   "scripts": {
     "dev": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "pack": "rm -rf ./dist && electron-builder --dir",
-    "dist": "rm -rf ./dist && electron-builder",
+    "dir": "electron-builder --dir",
+    "pack": "electron-builder",
     "clean": "rm -rf ./out",
-    "clean-dist": "rm -rf ./dist",
-    "start": "electron-forge start",
-    "package": "rm -rf ./out && electron-forge package",
-    "make": "rm -rf ./out && export $(cat .env | xargs) && electron-forge make",
-    "publish": "electron-forge publish"
+    "clean-dist": "rm -rf ./dist"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^7.2.0",
-    "@electron-forge/maker-deb": "^7.2.0",
-    "@electron-forge/maker-dmg": "^7.2.0",
-    "@electron-forge/maker-rpm": "^7.2.0",
-    "@electron-forge/maker-squirrel": "^7.2.0",
-    "@electron-forge/maker-zip": "^7.2.0",
-    "@electron-forge/publisher-github": "^7.2.0",
     "electron": "^28.1.0",
     "electron-builder": "^24.9.1",
     "electron-packager": "17.1.2",
