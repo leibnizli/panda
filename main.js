@@ -1,9 +1,4 @@
 const isMac = process.platform === 'darwin'
-const { updateElectronApp } = require('update-electron-app');
-updateElectronApp({
-  updateInterval: '1 hour'
-}); // additional configuration options available
-
 const {app, BrowserWindow, ipcMain, dialog, shell, Menu} = require('electron');
 const path = require('path')
 const url = require('url')
