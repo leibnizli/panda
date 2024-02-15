@@ -15,8 +15,8 @@
 
 ### Non-international network（非国际网）
 
-* <a href="https://thunkli.com/download/panda-macos">**macOS**</a>（Apple Silicon，上海节点）
-* <a href="https://thunkli.com/download/panda-x86_64-macos">**macOS**</a>（Intel，上海节点）
+* <a href="https://thunkli.com/download/panda-macos-arm64">**macOS**</a>（Apple Silicon，上海节点）
+* <a href="https://thunkli.com/download/panda-macos">**macOS**</a>（Intel，上海节点）
 * <a href="https://thunkli.com/download/panda-windows">**Windows**</a> （上海节点）
 
 
