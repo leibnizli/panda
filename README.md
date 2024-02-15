@@ -8,9 +8,16 @@ English | [简体中文](./README-zh-CN.md)
 
 ## Install
 
-* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda-1.2.0-arm64.dmg">macOS</a> v1.2.0 (Apple Silicon)
-* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda-1.2.0.dmg">macOS</a> v1.2.0 (Intel)
-* <a href="https://github.com/leibnizli/panda/releases/download/v1.2.0/Panda.Setup.1.2.0.exe">Windows</a> v1.2.0
+### International network (国际网)
+
+* <a href="https://github.com/leibnizli/panda/releases">**macOS v4.3.0**</a>
+* <a href="https://github.com/leibnizli/panda/releases">**Windows v4.3.0**</a>
+
+### Non-international network（非国际网）
+
+* <a href="https://thunkli.com/download/panda-macos">**macOS**</a>（Apple Silicon，上海节点）
+* <a href="https://thunkli.com/download/panda-x86_64-macos">**macOS**</a>（Intel，上海节点）
+* <a href="https://thunkli.com/download/panda-windows">**Windows**</a> （上海节点）
 
 
 ## Features
