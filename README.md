@@ -8,6 +8,9 @@ English | [简体中文](./README-zh-CN.md)
 
 ## Install
 
+* [What is Apple Silicon？](https://arayofsunshine.dev/blog/apple-silicon)
+* [macOS App cannot be opened](https://arayofsunshine.dev/blog/macos-app-cannot-be-opened)
+
 ### International network (国际网)
 
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>

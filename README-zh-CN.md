@@ -8,6 +8,9 @@
 
 ## 安装
 
+* [什么是Apple Silicon？](https://arayofsunshine.dev/zh-Hans/blog/apple-silicon)
+* [macOS App打不开](https://arayofsunshine.dev//zh-Hans/blog/macos-app-cannot-be-opened)
+
 ### International network (国际网)
 
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
