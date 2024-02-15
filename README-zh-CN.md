@@ -10,8 +10,8 @@
 
 ### International network (国际网)
 
-* <a href="https://github.com/leibnizli/panda/releases">**macOS v4.3.0**</a>
-* <a href="https://github.com/leibnizli/panda/releases">**Windows v4.3.0**</a>
+* <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
+* <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
 
 ### Non-international network（非国际网）
 
