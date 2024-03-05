@@ -11,17 +11,8 @@
 * [什么是Apple Silicon？](https://arayofsunshine.dev/zh-Hans/blog/apple-silicon)
 * [macOS App打不开](https://arayofsunshine.dev//zh-Hans/blog/macos-app-cannot-be-opened)
 
-### International network (国际网)
-
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
-
-### Non-international network（非国际网）
-
-* <a href="https://thunkli.com/download/panda-macos-arm64">**macOS**</a>（Apple Silicon，上海节点）
-* <a href="https://thunkli.com/download/panda-macos">**macOS**</a>（Intel，上海节点）
-* <a href="https://thunkli.com/download/panda-windows">**Windows**</a> （上海节点）
-
 
 ## 功能
 

@@ -11,17 +11,8 @@ English | [简体中文](./README-zh-CN.md)
 * [What is Apple Silicon？](https://arayofsunshine.dev/blog/apple-silicon)
 * [macOS App cannot be opened](https://arayofsunshine.dev/blog/macos-app-cannot-be-opened)
 
-### International network (国际网)
-
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
-
-### Non-international network（非国际网）
-
-* <a href="https://thunkli.com/download/panda-macos-arm64">**macOS**</a>（Apple Silicon，上海节点）
-* <a href="https://thunkli.com/download/panda-macos">**macOS**</a>（Intel，上海节点）
-* <a href="https://thunkli.com/download/panda-windows">**Windows**</a> （上海节点）
-
 ## Features
 
 1. Merge, you can batch assemble svg files into font files
