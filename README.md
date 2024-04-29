@@ -2,6 +2,7 @@ English | [简体中文](./README-zh-CN.md)
 
 # Panda
 
+> [!WARNING]
 > **Maintenance terminated**, functionality has been implanted into [hummingbird](https://github.com/leibnizli/hummingbird)!!!
 
 > A font processing App, Support for macOS and Windows. which is a visual package based on <a href="https://github.com/purplebamboo/font-carrier">font-carrier</a>

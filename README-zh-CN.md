@@ -2,6 +2,7 @@
 
 # Panda
 
+> [!WARNING]
 > 终止维护，功能已被植入到[hummingbird](https://github.com/leibnizli/hummingbird)！！！
 
 > 小熊猫是一款字体处理工具，是基于<a href="https://github.com/purplebamboo/font-carrier">font-carrier</a>的可视化封装
