@@ -13,6 +13,8 @@ English | [简体中文](./README-zh-CN.md)
 
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
+* <a href="https://apps.apple.com/us/app/webfont-export-glyphs-to-svg/id1181350496?mt=12">**macOS**(Paid version)</a>
+
 ## Features
 
 1. Merge, you can batch assemble svg files into font files

@@ -12,6 +12,7 @@
 * [macOS App打不开](https://arayofsunshine.dev//zh-Hans/blog/macos-app-cannot-be-opened)
 
 * <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
+* <a href="https://apps.apple.com/us/app/webfont-export-glyphs-to-svg/id1181350496?mt=12">**macOS**(尊贵收费版)</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
 
 ## 功能
