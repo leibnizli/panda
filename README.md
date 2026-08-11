@@ -8,12 +8,8 @@ English | [简体中文](./README-zh-CN.md)
 
 ## Install
 
-* [What is Apple Silicon？](https://arayofsunshine.dev/blog/apple-silicon)
-* [macOS App cannot be opened](https://arayofsunshine.dev/blog/macos-app-cannot-be-opened)
-
-* <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
-* <a href="https://apps.apple.com/us/app/webfont-export-glyphs-to-svg/id1181350496?mt=12">**macOS**(Paid version, 1.7 MB, 0.99$)</a>
+* <a href="https://apps.apple.com/cn/app/webfont-%E5%AD%97%E4%BD%93%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/id1181350496?mt=12">**macOS**(Paid version)</a>
 
 ## Features
 

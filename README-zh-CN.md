@@ -8,11 +8,7 @@
 
 ## 安装
 
-* [什么是Apple Silicon？](https://arayofsunshine.dev/zh-Hans/blog/apple-silicon)
-* [macOS App打不开](https://arayofsunshine.dev//zh-Hans/blog/macos-app-cannot-be-opened)
-
-* <a href="https://github.com/leibnizli/panda/releases">**macOS**</a>
-* <a href="https://apps.apple.com/us/app/webfont-export-glyphs-to-svg/id1181350496?mt=12">**macOS**(尊贵收费版，1.7 MB，0.99$)</a>
+* <a href="https://apps.apple.com/cn/app/webfont-%E5%AD%97%E4%BD%93%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/id1181350496?mt=12">**macOS**(尊贵收费版)</a>
 * <a href="https://github.com/leibnizli/panda/releases">**Windows**</a>
 
 ## 功能
