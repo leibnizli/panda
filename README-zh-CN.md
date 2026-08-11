@@ -19,12 +19,3 @@
 
 <img src="https://cloud.githubusercontent.com/assets/1193966/15237920/3edb94a0-1905-11e6-992e-84fa3a7b91c4.gif" alt="2" style="max-width:100%;">
 
-
-## 相似产品
-
-都是我开发🤣
-
-* <a href="https://github.com/leibnizli/FontMagic">FontMagic</a>
-* <a href="https://github.com/leibnizli/WebFont">WebFont</a>
-
-
